@@ -1,0 +1,46 @@
+.Signup {
+
+  &--root {
+    background-color: $color--papaya-inside-light;
+    background-position: center $padding--big;
+    background-repeat: no-repeat;
+    color: white;
+    padding: $padding--big;
+    position: relative;
+    text-align: center;
+    @include tablet-up {
+      background-image: url('../../assets/images/papaya--open-horizontal.png');
+    }
+  }
+
+  &--title {
+    font-style: italic;
+    letter-spacing: 10px;
+  }
+
+  &--form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &--field {
+    @extend .form--field;
+    margin-right: $padding--normal;
+  }
+
+  &--label {
+    @extend .form--label;
+  }
+
+  &--input-email {
+    @extend .form--input-inset;
+    border: 1px solid transparent;
+    border-radius: 2px;
+  }
+
+  &--button {
+    @extend .form--button;
+  }
+
+}

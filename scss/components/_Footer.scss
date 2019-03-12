@@ -1,0 +1,36 @@
+.Footer {
+
+  &--root {
+    background-color: $color--black;
+    color: $color--white;
+    padding: $padding--big;
+    position: relative;
+    text-align: center;
+  }
+
+  &--content {
+    margin: auto;
+    max-width: $width--column / 2;
+    margin-bottom: $padding--normal;
+  }
+
+  &--button-notify {
+    @extend .form--button;
+    background-color: $color--papaya-inside;
+    margin: auto;
+    max-width: 400px;
+    &:hover {
+      background-color: $color--papaya-inside-light;
+    }
+  }
+
+  &--disclaimer {
+    padding-top: $padding--normal;
+    max-width: 400px;
+    margin: auto;
+    p, h3 {
+      font-size: $font--size-contextual;
+    }
+  }
+
+}

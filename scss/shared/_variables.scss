@@ -1,0 +1,73 @@
+// Color Variables
+
+$color--white: #ffffff;
+$color--black: #000000;
+$color--papaya-inside: #e6541f;
+$color--papaya-inside-light: #f8a15c;
+$color--papaya-skin-yellow: #f6c227;
+$color--papaya-skin-yellow-dark: #c7ad1c;
+$color--papays-skin-brown: #c4932c;
+$color--papaya-skin-green: #776e19;
+$color--papaya-skin-green-dark: #54551e;
+$color--papaya-seed: #5b3d24;
+
+$color-mod--light: #111;
+$color-mod--medium: #333;
+$color-mod--strong: #555;
+
+$opacity--light: 0.05;
+$opacity--medium: 0.1;
+$opacity--dark: 0.4;
+$opacity--black: 0.7;
+
+$tint--light: rgba(0, 20, 50, $opacity--light);
+$tint--medium: rgba(0, 20, 50, $opacity--medium);
+$tint--dark: rgba(0, 20, 50, $opacity--dark);
+$tint--black: rgba(0, 20, 50, $opacity--black);
+
+$dim--light: rgba(249, 249, 249, 0.95);
+
+// Effect Variables
+
+$effect--border: 1px solid $tint--medium;
+$effect--border-dark: 1px solid $tint--dark;
+$effect--shadow-up: 0 -3px 0 $tint--light;
+$effect--shadow-down: 0 3px 0 $tint--light;
+$effect--shadow-up-deep: 0 -5px 0 $tint--light;
+$effect--shadow-down-deep: 0 5px 0 $tint--light;
+$effect--transition-default: 0.25s;
+
+// Font Variables
+
+$font--family-body: 'Playfair Display', sans-serif;
+$font--family-heading: $font--family-body, serif;
+$font--family-secondary: 'Montserrat', sans-serif;
+$font--family-forms: 'Anonymous Pro', monospace;
+
+$font--weight-normal: 400;
+$font--weight-light: 300;
+$font--weight-heavy: 700;
+
+$font--size-h1: 42px;
+$font--size-h1-mobile: 36px;
+$font--size-h2: 28px;
+$font--size-h3: 20px;
+
+$font--size-lead: 24px;
+$font--size-body: 16px;
+$font--size-small: 14px;
+$font--size-contextual: 12px;
+
+$font--leading-content: 1.6;
+$font--leading-heading: 1.1;
+$font--leading-none: 1;
+
+// Layout Variables
+
+$width--column: 1200px;
+$width--breakpoint: 900px;
+$width--breakpoint-mobile: 600px;
+
+$padding--normal: 20px;
+$padding--small: 10px;
+$padding--big: 60px;

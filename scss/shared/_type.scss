@@ -1,0 +1,139 @@
+.type {
+
+  &--body {
+    background-color: $color--black;
+    color: $color--black;
+    font-family: $font--family-body;
+    font-weight: $font--weight-normal;
+  }
+
+  &--link {
+    text-decoration: none;
+    &:hover {
+
+    }
+  }
+
+  &--h1,
+  &--h2,
+  &--h3 {
+    font-family: $font--family-heading;
+    line-height: $font--leading-heading;
+    margin-top: 0;
+    margin-bottom: $padding--normal;
+  }
+
+  &--h1 {
+    font-weight: $font--weight-heavy;
+    font-size: $font--size-h1;
+    @include mobile {
+      font-size: $font--size-h1-mobile;
+    }
+  }
+
+  &--h2 {
+    font-size: $font--size-h2;
+    font-style: italic;
+    font-weight: $font--weight-normal;
+    letter-spacing: 10px;
+    position: relative;
+    text-transform: uppercase;
+  }
+
+  &--underlined {
+    padding-bottom: $padding--normal;
+    &::after {
+      border-bottom: 1px solid;
+      content: '';
+      display: block;
+      position: absolute;
+      left: 50%;
+      top: 100%;
+      height: 1px;
+      transform: translateX(-50%);
+      width: 100px;
+    }
+  }
+
+  &--h2-content {
+    @extend .type--h2;
+    border-bottom: 1px solid $tint--medium;
+    padding-bottom: $padding--small;
+  }
+
+  &--h3 {
+    font-weight: $font--weight-light;
+    font-size: $font--size-h3;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  &--h3-content {
+    @extend .type--h3;
+    border-bottom: 1px solid $tint--medium;
+    padding-bottom: $padding--small;
+  }
+
+  &--ui {
+    font-family: $font--family-secondary;
+    font-size: $font--size-small;
+    letter-spacing: 1px;
+    line-height: $font--leading-none;
+  }
+
+  &--ui-contextual {
+    color: $tint--dark;
+    font-family: $font--family-secondary;
+    font-size: $font--size-contextual;
+    font-weight: $font--weight-normal;
+    letter-spacing: 1px;
+    line-height: $font--leading-none;
+    text-transform: uppercase;
+  }
+
+  &--ui-input {
+    font-family: $font--family-forms;
+    font-size: $font--size-h3;
+    font-weight: $font--weight-light;
+    line-height: $font--leading-none;
+  }
+
+  &--ui-button {
+    font-family: $font--family-secondary;
+    font-size: $font--size-h3;
+    font-weight: $font--weight-normal;
+    letter-spacing: 1px;
+    line-height: $font--leading-none;
+    text-transform: lowercase;
+  }
+
+  &--content {
+    font-family: $font--family-body;
+    font-size: $font--size-body;
+    font-weight: $font--weight-light;
+    line-height: $font--leading-content;
+    margin: $padding--small 0;
+  }
+
+  &--lead {
+    font-family: $font--family-body;
+    font-size: $font--size-lead;
+    font-weight: $font--weight-normal;
+  }
+
+}
+
+// Global Defaults, for fallback only
+
+a { @extend .type--link; }
+body {
+  @extend .type--body;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+}
+h1 { @extend .type--h1; }
+h2 { @extend .type--h2; }
+h3 { @extend .type--h3; }
+p, ul, ol { @extend .type--content; }

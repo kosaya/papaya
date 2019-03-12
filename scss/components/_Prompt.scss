@@ -1,0 +1,19 @@
+.Prompt {
+
+  &--root {
+    text-align: center;
+    padding: $padding--big;
+    padding-top: 0;
+    position: relative;
+    @include desktop {
+      padding: $padding--big 260px;
+      padding-top: 0;
+    }
+  }
+
+  &--text {
+    font-size: $font--size-h2;
+    font-style: italic;
+  }
+
+}

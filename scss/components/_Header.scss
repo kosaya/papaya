@@ -1,0 +1,35 @@
+.Header {
+
+  &--root {
+    position: relative;
+    padding: $padding--big;
+    text-align: center;
+    @include desktop {
+      padding: $padding--big 200px;
+    }
+  }
+
+  &--title {
+    display: block;
+    font-style: italic;
+    max-width: $width--column;
+    margin: auto;
+    margin-bottom: $padding--small;
+    text-transform: lowercase;
+  }
+
+  &--logo {
+    height: auto;
+    max-width: 250px;
+    width: 100%;
+  }
+
+  &--subtitle {
+    @extend .type--h2;
+    @extend .type--underlined;
+    font-style: italic;
+    letter-spacing: 10px;
+    margin-bottom: $padding--normal;
+  }
+
+}

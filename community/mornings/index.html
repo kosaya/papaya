@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>papaya: your weekly guide to food and fulfilled life.</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro|Lora:400,400i,700,700i|Montserrat:400,400i|Playfair+Display:400,400i,700,700i" rel="stylesheet">
+    <link href="../../assets/css/journal.css" rel="stylesheet" />
+  </head>
+  <body class="Page--root">
+
+    <div class="Background--root">
+      <div class="Background--overlay"></div>
+      <div class="Background--left" style="background-image: url('../../assets/images/papaya--watercolor-left.jpg');"></div>
+      <div class="Background--right" style="background-image: url('../../assets/images/papaya--watercolor-right.jpg');"></div>
+    </div>
+
+    <header class="Page--header Header--root">
+      <h1 class="Header--title">
+        <img
+            alt="papaya"
+            class="Header--logo"
+            src="../../assets/images/papaya-logo.png"
+        />
+      </h1>
+      <h2 class="Header--subtitle">Community Journal</h2>
+    </header>
+
+    <section class="Prompt--root">
+      <div class="Prompt--text">What are your morning rituals? <br>What does the first hour of your morning look like?</div>
+    </section>
+
+    <section class="Responses--root">
+      <div class="Responses--comments">
+        <h2 class="Responses--title">Share Your Thoughts</h2>
+        <div id="disqus_thread"></div>
+      </div>
+      <script>
+
+
+        var disqus_config = function () {
+          this.page.url = 'http://lublyou.com/papaya/journal';
+          this.page.identifier = 'journal-1';
+        };
+
+        (function() { // DON'T EDIT BELOW THIS LINE
+          var d = document, s = d.createElement('script');
+          s.src = 'https://lublyou.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </section>
+
+    <section id="signup" class="Page--signup Signup--root">
+      <h2 class="Signup--title">Subscribe</h2>
+      <form
+          action="//unexpected.us14.list-manage.com/subscribe/post?u=91886f580fe1f1d006d559634&amp;id=aa547a3ea2"
+          method="post"
+          id="mc-embedded-subscribe-form"
+          name="mc-embedded-subscribe-form"
+          class="Signup--form validate"
+          target="_blank"
+          novalidate
+      >
+        <div class="Signup--field">
+          <label class="Signup--label">Email Address</label>
+          <input type="email" value="" name="EMAIL" class="Signup--input-email email" id="mce-EMAIL" placeholder="you@youremail.com" required>
+        </div>
+        <button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="Signup--button button">yes!</button>
+        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_91886f580fe1f1d006d559634_aa547a3ea2" tabindex="-1" value=""></div>
+      </form>
+      <div class="Signup--content Content--root">
+        <p>Enter your email to receive your weekly scoop of Papaya</p>
+      </div>
+    </section>
+
+    <footer class="Page--footer Footer--root">
+      <div class="Footer--disclaimer">
+        <h3>Disclaimer</h3>
+        <p>I'm not a medical professional, nor a certified specialist or expert. This site and newsletter offers wellness, fitness, nutritional and lifestyle information for entertainment purposes only. No information on this site should be relied upon to determine diet, make a medical diagnosis, or determine treatment for a medical condition.</p>
+        <p>NO information on this site or in the newsletter should be used to diagnose, treat, prevent or cure any disease or condition.</p>
+        <p>You should not rely on this information as a substitute for, nor does it replace, professional medical advice, diagnosis, or treatment. If you have any concerns or questions about your health or personal needs, you should always consult with a physician or other health-care professional.</p>
+      </div>
+      <p class="Footer--copyright">&copy; 2018 <em>papaya</em></p>
+    </footer>
+
+    <div class="Page--scripts">
+      <script>!function(){"use strict";function o(o){var t=["MSIE ","Trident/","Edge/"];return new RegExp(t.join("|")).test(o)}function t(){function t(o,t){this.scrollLeft=o,this.scrollTop=t}function r(o){return.5*(1-Math.cos(Math.PI*o))}function i(o){if(null===o||"object"!=typeof o||void 0===o.behavior||"auto"===o.behavior||"instant"===o.behavior)return!0;if("object"==typeof o&&"smooth"===o.behavior)return!1;throw new TypeError("behavior member of ScrollOptions "+o.behavior+" is not a valid value for enumeration ScrollBehavior.")}function s(o,t){return"Y"===t?o.clientHeight+h<o.scrollHeight:"X"===t?o.clientWidth+h<o.scrollWidth:void 0}function c(o,t){var e=l.getComputedStyle(o,null)["overflow"+t];return"auto"===e||"scroll"===e}function n(o){var t=s(o,"Y")&&c(o,"Y"),l=s(o,"X")&&c(o,"X");return t||l}function f(o){var t;do{t=(o=o.parentNode)===e.body}while(!1===t&&!1===n(o));return t=null,o}function a(o){var t,e,i,s=(y()-o.startTime)/v;t=r(s=s>1?1:s),e=o.startX+(o.x-o.startX)*t,i=o.startY+(o.y-o.startY)*t,o.method.call(o.scrollable,e,i),e===o.x&&i===o.y||l.requestAnimationFrame(a.bind(l,o))}function p(o,r,i){var s,c,n,f,p=y();o===e.body?(s=l,c=l.scrollX||l.pageXOffset,n=l.scrollY||l.pageYOffset,f=u.scroll):(s=o,c=o.scrollLeft,n=o.scrollTop,f=t),a({scrollable:s,method:f,startTime:p,startX:c,startY:n,x:r,y:i})}if(!("scrollBehavior"in e.documentElement.style&&!0!==l.__forceSmoothScrollPolyfill__)){var d=l.HTMLElement||l.Element,v=468,h=o(l.navigator.userAgent)?1:0,u={scroll:l.scroll||l.scrollTo,scrollBy:l.scrollBy,elementScroll:d.prototype.scroll||t,scrollIntoView:d.prototype.scrollIntoView},y=l.performance&&l.performance.now?l.performance.now.bind(l.performance):Date.now;l.scroll=l.scrollTo=function(){void 0!==arguments[0]&&(!0!==i(arguments[0])?p.call(l,e.body,void 0!==arguments[0].left?~~arguments[0].left:l.scrollX||l.pageXOffset,void 0!==arguments[0].top?~~arguments[0].top:l.scrollY||l.pageYOffset):u.scroll.call(l,void 0!==arguments[0].left?arguments[0].left:"object"!=typeof arguments[0]?arguments[0]:l.scrollX||l.pageXOffset,void 0!==arguments[0].top?arguments[0].top:void 0!==arguments[1]?arguments[1]:l.scrollY||l.pageYOffset))},l.scrollBy=function(){void 0!==arguments[0]&&(i(arguments[0])?u.scrollBy.call(l,void 0!==arguments[0].left?arguments[0].left:"object"!=typeof arguments[0]?arguments[0]:0,void 0!==arguments[0].top?arguments[0].top:void 0!==arguments[1]?arguments[1]:0):p.call(l,e.body,~~arguments[0].left+(l.scrollX||l.pageXOffset),~~arguments[0].top+(l.scrollY||l.pageYOffset)))},d.prototype.scroll=d.prototype.scrollTo=function(){if(void 0!==arguments[0])if(!0!==i(arguments[0])){var o=arguments[0].left,t=arguments[0].top;p.call(this,this,void 0===o?this.scrollLeft:~~o,void 0===t?this.scrollTop:~~t)}else{if("number"==typeof arguments[0]&&void 0===arguments[1])throw new SyntaxError("Value couldn't be converted");u.elementScroll.call(this,void 0!==arguments[0].left?~~arguments[0].left:"object"!=typeof arguments[0]?~~arguments[0]:this.scrollLeft,void 0!==arguments[0].top?~~arguments[0].top:void 0!==arguments[1]?~~arguments[1]:this.scrollTop)}},d.prototype.scrollBy=function(){void 0!==arguments[0]&&(!0!==i(arguments[0])?this.scroll({left:~~arguments[0].left+this.scrollLeft,top:~~arguments[0].top+this.scrollTop,behavior:arguments[0].behavior}):u.elementScroll.call(this,void 0!==arguments[0].left?~~arguments[0].left+this.scrollLeft:~~arguments[0]+this.scrollLeft,void 0!==arguments[0].top?~~arguments[0].top+this.scrollTop:~~arguments[1]+this.scrollTop))},d.prototype.scrollIntoView=function(){if(!0!==i(arguments[0])){var o=f(this),t=o.getBoundingClientRect(),r=this.getBoundingClientRect();o!==e.body?(p.call(this,o,o.scrollLeft+r.left-t.left,o.scrollTop+r.top-t.top),"fixed"!==l.getComputedStyle(o).position&&l.scrollBy({left:t.left,top:t.top,behavior:"smooth"})):l.scrollBy({left:r.left,top:r.top,behavior:"smooth"})}else u.scrollIntoView.call(this,void 0===arguments[0]||arguments[0])}}}var l=window,e=document;"object"==typeof exports?module.exports={polyfill:t}:t()}();
+      </script>
+      <script>
+        window.__forceSmoothScrollPolyfill__ = true;
+        document.getElementById('scroll-back-up').addEventListener('click', function(e) {
+          e.preventDefault();
+          document.getElementById('signup').scrollIntoView({
+            block: "center",
+            behavior: 'smooth'
+          });
+        });
+      </script>
+      <script>/*<![CDATA[*/var sc_project=9759594;var sc_security="703427c0";var sc_invisible=1;var scJsHost=(("https:"==document.location.protocol)?"https://secure.":"http://www.");document.write("<sc"+"ript src='"+scJsHost+"statcounter.com/counter/counter.js'></"+"script>");/*]]>*/</script>
+      <script src="http://www.statcounter.com/counter/counter.js"></script>
+      <noscript>&lt;div class="statcounter"&gt;&lt;a title="web analytics" href="http://statcounter.com/"&gt;&lt;img class="statcounter" src="http://c.statcounter.com/9759594/0/703427c0/1/" alt="web analytics" /&gt;&lt;/a&gt;&lt;/div&gt;</noscript>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+.PromptsArchive {
+
+  &--root {
+    display: block;
+    margin: auto;
+    max-width: $width--breakpoint;
+    position: relative;
+    text-align: center;
+    padding: $padding--big;
+    padding-top: 0;
+    @include desktop {
+      display: flex;
+      padding: $padding--big 260px;
+      padding-top: 0;
+    }
+  }
+
+  &--prompt {
+    align-items: center;
+    border: 1px solid $tint--light;
+    box-sizing: border-box;
+    color: $color--black;
+    display: flex;
+    flex: 1 0 auto;
+    justify-content: center;
+    margin-right: $padding--normal;
+    min-height: 300px;
+    padding: $padding--normal;
+    transition: all 0.5s;
+    width: calc(50% - #{$padding--normal / 2});
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+
+    &:hover {
+      border: 1px solid $tint--dark;
+    }
+
+    @include tablet-down {
+      margin-right: 0;
+      margin-bottom: $padding--normal;
+      width: 100%;
+    }
+
+    &:nth-child(2n + 1) {
+      background-color: $color--papaya-skin-yellow + $color-mod--light;
+      color: $color--black;
+    }
+
+    &:nth-child(2n + 2) {
+      background-color: $color--papaya-skin-green + $color-mod--medium;
+      color: $color--white;
+    }
+
+    &:nth-child(2n + 3) {
+      background-color: $color--papaya-skin-yellow + $color-mod--light;
+      color: $color--white;
+    }
+
+    &:nth-child(2n + 4) {
+      background-color: $color--papaya-seed + $color-mod--light;
+      color: $color--white;
+    }
+  }
+
+  &--prompt-title {
+    @extend .type--h3;
+    margin: 0;
+    padding: 0;
+  }
+}

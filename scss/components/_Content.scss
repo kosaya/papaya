@@ -1,0 +1,16 @@
+.Content {
+
+  &--root {
+
+    p {
+      @extend .type--content;
+    }
+
+    .Content--lead {
+      font-size: $font--size-lead;
+      line-height: 1.3;
+    }
+
+  }
+
+}

@@ -1,0 +1,17 @@
+.Responses {
+
+  &--root {
+    text-align: center;
+    padding: $padding--big;
+    position: relative;
+    @include desktop {
+      padding: $padding--big 260px;
+    }
+  }
+
+  &--comments {
+    max-width: $width--breakpoint;
+    margin: auto;
+  }
+
+}

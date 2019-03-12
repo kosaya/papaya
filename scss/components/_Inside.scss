@@ -1,0 +1,98 @@
+.Inside {
+
+  &--root {
+    text-align: center;
+    padding: $padding--big;
+    @include desktop {
+      padding: $padding--big 260px;
+    }
+  }
+
+  &--title {
+    @extend .type--h2;
+    @extend .type--underlined;
+  }
+
+  &--features {
+    list-style: none;
+    margin: 0 auto;
+    max-width: $width--column * 0.6;
+    padding: 0;
+  }
+
+  &--feature {
+    background-position: $padding--normal $padding--normal;
+    background-repeat: no-repeat;
+    background-size: auto 250px;
+    padding: $padding--normal;
+    text-align: left;
+
+    @include tablet-up {
+      min-height: 250px;
+      padding: $padding--big;
+      padding-left: 200px;
+
+      &:nth-child(2n) {
+        background-position: calc(100% - #{$padding--normal}) $padding--normal;
+        padding-left: $padding--big;
+        padding-right: 200px;
+        text-align: right;
+      }
+    }
+  }
+
+  &--feature-recipes,
+  &--feature-ingredients,
+  &--feature-community {
+    @extend .Inside--feature;
+  }
+
+  @include tablet-up {
+    &--feature-recipes {
+      background-image: url('../../assets/images/papaya--closed-vertical.png');
+    }
+
+    &--feature-ingredients {
+      background-image: url('../../assets/images/papaya--half-vertical.png');
+    }
+
+    &--feature-community {
+      background-image: url('../../assets/images/papaya--open-vertical.png');
+    }
+  }
+
+  &--archive {
+    max-width: $width--column * 0.6;
+    margin: 0 auto;
+  }
+
+  &--archive-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &--archive-item {
+    display: inline-block;
+    &::after {
+      content: "//";
+      margin-left: 9px;
+      margin-right: 3px;
+    }
+
+    &:last-of-type {
+      &::after {
+        content: "";
+        margin: 0;
+      }
+    }
+  }
+
+  &--archive-item-link {
+    color: $color--papaya-inside;
+    &:hover {
+      color: $color--papaya-inside-light;
+    }
+  }
+
+}

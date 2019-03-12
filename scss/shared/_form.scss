@@ -1,0 +1,98 @@
+.form {
+
+  &--form {
+    border: $effect--border;
+    background-color: $color--white;
+    margin-left: -$padding--normal;
+    margin-right: -$padding--normal;
+    padding: $padding--normal;
+  }
+
+  &--group {
+    border-bottom: $effect--border;
+    margin-bottom: $padding--normal;
+    padding-bottom: $padding--normal;
+    &:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+  }
+
+  &--field {
+    position: relative;
+    display: block;
+    max-width: 100%;
+  }
+
+  &--field-required > .form--label::after {
+    content: "*";
+    color: indianred;
+    display: inline-block;
+    margin-left: 5px;
+  }
+
+  &--label {
+    @extend .type--ui-contextual;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+
+  &--input {
+    @extend .type--ui-input;
+    background-color: $color--white;
+    border: $effect--border-dark;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: block;
+    max-width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 32px;
+    padding-bottom: 8px;
+    transition: box-shadow $effect--transition-default;
+    width: 100%;
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &--input-outset {
+    @extend .form--input;
+    box-shadow: $effect--shadow-down, inset $effect--shadow-up;
+    &:focus,
+    &:hover {
+      box-shadow: $effect--shadow-down, inset $effect--shadow-up-deep;
+    }
+  }
+
+  &--input-inset {
+    @extend .form--input;
+    box-shadow: inset $effect--shadow-down;
+    &:focus,
+    &:hover {
+      box-shadow: inset $effect--shadow-down-deep;
+    }
+  }
+
+  &--button {
+    @extend .type--ui-button;
+    background-color: $color--black;
+    border: 2px solid $tint--light;
+    border-radius: 3px;
+    box-shadow: $effect--shadow-down;
+    box-sizing: border-box;
+    color: $color--white;
+    cursor: pointer;
+    display: block;
+    padding: $padding--normal;
+    text-align: center;
+    transition: all $effect--transition-default;
+    &:hover {
+      background-color: $color--black + $color-mod--medium;
+      box-shadow: $effect--shadow-down-deep;
+    }
+  }
+
+}
